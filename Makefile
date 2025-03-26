@@ -1,4 +1,4 @@
-CXXFLAGS=-I "C:\Users\tuals\Downloads\rapidjson-master\include"
+CXXFLAGS=-IC:\Users\tuals\Downloads\rapidjson-master\include"
 LDFLAGS=-lcurl
 LD=g++
 CC=g++
