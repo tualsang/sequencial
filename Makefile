@@ -1,14 +1,12 @@
-CXXFLAGS=-IC:\Users\tuals\Downloads\rapidjson-master\include
-LDFLAGS=-lcurl
-LD=g++
 CC=g++
+LD=g++
+CXXFLAGS=-IC:\Users\tuals\Downloads\curl\include -IC:\Users\tuals\Downloads\rapidjson-master\include
+LDFLAGS=-LC:\Users\tuals\Downloads\curl\lib -lcurl
 
-all: level_client par_level_client
+all: level_client
 
-level_client: level_client.o
-	$(LD) $< -o $@ $(LDFLAGS)
-
-
+level_client: level_client.cpp
+    $(CC) $(CXXFLAGS) $< -o $@ $(LDFLAGS)
 
 clean:
-	-rm level_client level_client.o
+    -rm level_client
