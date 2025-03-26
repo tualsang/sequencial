@@ -3,10 +3,10 @@ CC=g++
 LD=g++
 
 # Define the include paths
-CXXFLAGS=-I"C:\Users\tuals\Downloads\curl\include" -I"C:\Users\tuals\Downloads\rapidjson-master\include"
+CXXFLAGS=-IC:/Users/tuals/Downloads/curl/include -IC:/Users/tuals/Downloads/rapidjson-master/include
 
 # Define the library paths
-LDFLAGS=-L"C:\Users\tuals\Downloads\curl\lib" -lcurl
+LDFLAGS=-LC:/Users/tuals/Downloads/curl/lib -lcurl
 
 # Define the default target
 all: level_client
