@@ -1,12 +1,12 @@
 CC=g++
 LD=g++
-CXXFLAGS=-IC:/rapidjson/include
+CXXFLAGS=-I$(HOME)/rapidjson/include
 LDFLAGS=-lcurl
 
 all: level_client
 
 level_client: level_client.cpp
-    $(LD) $(CXXFLAGS) $< -o $@ $(LDFLAGS)
+	$(LD) $(CXXFLAGS) $< -o $@ $(LDFLAGS)
 
 clean:
-    rm -f level_client
+	rm -f level_client
